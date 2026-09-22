@@ -1,0 +1,51 @@
+{
+  "watchlist": [
+    "AAPL",
+    "MSFT",
+    "NVDA",
+    "AMZN",
+    "GOOGL",
+    "META",
+    "JPM",
+    "XOM",
+    "UNH",
+    "CAT"
+  ],
+  "benchmark": "SPY",
+  "max_bar_age_days": 5,
+  "mean_reversion": {
+    "training_sessions": 60,
+    "signal_sessions": 3,
+    "entry_z": -2.0,
+    "band_window": 20,
+    "trend_window": 200,
+    "rsi_period": 2,
+    "rsi_entry": 10,
+    "max_holding_sessions": 5,
+    "max_factor_correlation": 0.98,
+    "sector_etfs": {
+      "AAPL": "XLK",
+      "MSFT": "XLK",
+      "NVDA": "XLK",
+      "AMZN": "XLY",
+      "GOOGL": "XLC",
+      "META": "XLC",
+      "JPM": "XLF",
+      "XOM": "XLE",
+      "UNH": "XLV",
+      "CAT": "XLI"
+    }
+  },
+  "risk": {
+    "stop_pct": 0.025,
+    "take_profit_pct": 0.025,
+    "max_position_fraction": 0.2,
+    "max_positions": 5,
+    "account_risk_per_trade": 0.005,
+    "one_way_cost_bps": 10
+  },
+  "weights": {},
+  "pairs": {
+    "min_price": 5.0
+  }
+}
